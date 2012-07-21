@@ -17,6 +17,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="bsh-core-2.0b4" level="project" />
   </component>
 </module>
 

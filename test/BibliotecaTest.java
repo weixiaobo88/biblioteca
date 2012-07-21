@@ -1,11 +1,11 @@
-import com.thoughtworks.biblioteca.*;
-import org.junit.Before;
+import com.thoughtworks.biblioteca.Biblioteca;
+import org.jmock.Expectations;
+import org.jmock.Mockery;
+import org.jmock.integration.junit4.JUnit4Mockery;
+import org.jmock.lib.legacy.ClassImposteriser;
 import org.junit.Test;
 
-import java.util.ArrayList;
-
-import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertThat;
+import java.io.PrintStream;
 
 /**
 * Created with IntelliJ IDEA.
@@ -15,57 +15,28 @@ import static org.junit.Assert.assertThat;
 * To change this template use File | Settings | File Templates.
 */
 public class BibliotecaTest {
+
     private Biblioteca biblioteca = new Biblioteca();
 
-
-    @Before
-    public void setUp(){
-        biblioteca.startMessage();
-        biblioteca.startMenuOption();
-        biblioteca.bookInitial();
-    }
-
-    @Test
-    public void should_customer_see_welcome_when_start_application(){
-        assertThat("No welcome message showed!", biblioteca.startMessage(), is("Welcome to use biblioteca!"));
-
-    }
+    private Mockery context = new JUnit4Mockery(){
+        {
+            setImposteriser(ClassImposteriser.INSTANCE);
+        }
+    };
+    private PrintStream mockPrintStream = context.mock(PrintStream.class);
 
     @Test
-    public void should_customer_see_menu_option_when_start_application(){
-        assertThat("No menu option!", biblioteca.startMenuOption(), is(true));
-    }
+    public void should_show_welcome_message_when_start_up(){
 
-    @Test
-    public void should_return_book_list_when_customer_select_menu_of_view_books(){
-        assertThat("No books!", biblioteca.bookView(), is(true));
-    }
+        System.setOut(mockPrintStream);
 
-    @Test
-    public void should_return_true_when_input_book_id_is_correct(){
-        String inputBookId = "2";
-        assertThat(biblioteca.ifSelectedOptionIsLegal(inputBookId), is(true));
-    }
-    @Test
-    public void should_return_false_when_input_book_id_is_incorrect(){
-        String inputBookId = "m";
-        assertThat(biblioteca.ifSelectedOptionIsLegal(inputBookId), is(false));
-    }
+        final String startMessage = "Welcome to use biblioteca!";
+        context.checking(new Expectations(){{
+            oneOf(mockPrintStream).println(startMessage);
+        }});
 
-
-    @Test
-    public void should_book_be_available_before_customer_reserve_it(){
-        int bookId = 1;
-        assertThat(biblioteca.findBookByBookId(bookId).getBookAvailableReserve(), is(true));
+        biblioteca.showMessage();
     }
-
-    @Test
-    public void should_book_be_unavailable_when_customer_reserved_it(){
-        int bookId = 1;
-        biblioteca.dealBookReserve(bookId);
-        assertThat(biblioteca.findBookByBookId(bookId).getBookAvailableReserve(), is(false));
-    }
-
 
 
 }

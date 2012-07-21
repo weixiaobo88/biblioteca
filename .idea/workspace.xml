@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee4d9798-7adc-4cf3-98f5-7df1cebf947c" name="Default" comment="" />
+    <list default="true" id="ee4d9798-7adc-4cf3-98f5-7df1cebf947c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/bsh-core-2.0b4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cglib-2.1_3-src.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/cglib-nodep-2.1_3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hamcrest-core-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hamcrest-library-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jmock-2.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jmock-junit3-2.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jmock-junit4-2.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jmock-legacy-2.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jmock-script-2.5.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/objenesis-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/bsh_core_2_0b4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BookList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/MenuOptionTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/biblioteca/com/thoughtworks/biblioteca/BibliotecaMain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/biblioteca/com/thoughtworks/biblioteca/Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/biblioteca/com/thoughtworks/biblioteca/testWhile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BibliotecaMain.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/testWhile.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Util.java" afterPath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/InputStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblioteca.iml" afterPath="$PROJECT_DIR$/biblioteca.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java" afterPath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java" afterPath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java" afterPath="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/BibliotecaTest.java" afterPath="$PROJECT_DIR$/test/BibliotecaTest.java" />
+    </list>
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,23 +92,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BibliotecaTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/BibliotecaTest.java">
+      <file leaf-file-name="BookList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BookList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="60" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.5394737">
+            <state line="30" column="19" selection-start="852" selection-end="852" vertical-scroll-proportion="0.6164383">
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Biblioteca.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="51" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#318#324#0" expanded="true" />
+                <element signature="e#301#307#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +106,47 @@
       <file leaf-file-name="Book.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="15" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+            <state line="14" column="62" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Biblioteca.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="191" selection-end="365" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BibliotecaTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/BibliotecaTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="26" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuOptionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/MenuOptionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="37" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuOption.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="12" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,6 +159,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="expandStates">
       <map>
@@ -111,20 +172,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/StartApplication.java" />
         <option value="$PROJECT_DIR$/test/CustomerTest.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BookReserve.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/testWhile.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/inputInfoInterface.java" />
-        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java" />
-        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BibliotecaMain.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca2.java" />
         <option value="$PROJECT_DIR$/test/BookTest.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Util.java" />
-        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/InputStream.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BookList.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BibliotecaMain.java" />
         <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java" />
         <option value="$PROJECT_DIR$/test/BibliotecaTest.java" />
+        <option value="$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java" />
+        <option value="$PROJECT_DIR$/test/MenuOptionTest.java" />
       </list>
     </option>
   </component>
@@ -133,10 +196,10 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="832" />
+    <option name="width" value="1387" />
+    <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -162,6 +225,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,14 +267,22 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -217,60 +298,42 @@
               <option name="myItemId" value="biblioteca" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
-    <property name="recentsLimit" value="5" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/src/com/thoughtworks/biblioteca" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.thoughtworks.biblioteca" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BibliotecaTest">
-    <configuration default="false" name="BibliotecaTest.should_return_book_list_when_customer_select_menu_of_view_books" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BibliotecaTest" />
-      <option name="METHOD_NAME" value="should_return_book_list_when_customer_select_menu_of_view_books" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.BibliotecaTest.shouldSayMenuOptions">
     <configuration default="false" name="BibliotecaTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -293,13 +356,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BibliotecaTest.should_return_false_when_input_is_not_a_number" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="BibliotecaTest.should_show_menu_option_when_start_up" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BibliotecaTest" />
-      <option name="METHOD_NAME" value="should_return_false_when_input_is_not_a_number" />
+      <option name="METHOD_NAME" value="should_show_menu_option_when_start_up" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -315,13 +378,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BibliotecaTest.should_be_successful_when_customer_reserve_a_book_first_time" type="JUnit" factoryName="JUnit" temporary="true">
+    <configuration default="false" name="MenuOptionTest.should_show_menu_option_when_start_up" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BibliotecaTest" />
-      <option name="METHOD_NAME" value="should_be_successful_when_customer_reserve_a_book_first_time" />
+      <option name="MAIN_CLASS_NAME" value="MenuOptionTest" />
+      <option name="METHOD_NAME" value="should_show_menu_option_when_start_up" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -333,30 +396,50 @@
       </option>
       <envs />
       <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="BibliotecaMain" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.biblioteca.BibliotecaMain" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <configuration default="false" name="MenuOptionTest.should_show_book_list_when_select_the_menu_of_view_books" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="biblioteca" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MenuOptionTest" />
+      <option name="METHOD_NAME" value="should_show_book_list_when_select_the_menu_of_view_books" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="biblioteca" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BibliotecaTest.shouldSayMenuOptions" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.twu28.biblioteca.BibliotecaTest" />
+      <option name="METHOD_NAME" value="shouldSayMenuOptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -379,6 +462,24 @@
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -407,24 +508,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -477,11 +560,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BibliotecaTest.should_return_book_list_when_customer_select_menu_of_view_books" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BibliotecaTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BibliotecaTest.should_return_false_when_input_is_not_a_number" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BibliotecaTest.should_be_successful_when_customer_reserve_a_book_first_time" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BibliotecaMain" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.BibliotecaTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.BibliotecaTest.should_show_menu_option_when_start_up" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MenuOptionTest.should_show_menu_option_when_start_up" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MenuOptionTest.should_show_book_list_when_select_the_menu_of_view_books" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BibliotecaTest.shouldSayMenuOptions" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -536,25 +619,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="832" extended-state="6" />
+    <frame x="0" y="22" width="1387" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5780591" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994374" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.61162484" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24928162" sideWeight="0.5780591" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297414" sideWeight="0.5780591" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3994253" sideWeight="0.5780591" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27083334" sideWeight="0.5780591" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42194092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39938557" sideWeight="0.5780591" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20014937" sideWeight="0.7754293" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22457068" sideWeight="0.9947722" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -620,128 +703,196 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/Integer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="0" selection-start="4244" selection-end="4244" vertical-scroll-proportion="0.6819788">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BibliotecaMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="47" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="48" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#4931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="35" selection-start="1439" selection-end="1439" vertical-scroll-proportion="-5.04">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="67" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#3733#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="67" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/RunBefores.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="619" selection-end="619" vertical-scroll-proportion="0.4852941">
-          <folding />
-        </state>
+        <state line="12" column="16" selection-start="619" selection-end="619" vertical-scroll-proportion="0.4852941" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="16" selection-start="492" selection-end="492" vertical-scroll-proportion="0.42492917">
-          <folding />
-        </state>
+        <state line="11" column="16" selection-start="492" selection-end="492" vertical-scroll-proportion="0.42492917" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.10.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="511" selection-end="511" vertical-scroll-proportion="0.33235294">
-          <folding>
-            <element signature="e#0#1777#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="28" selection-start="511" selection-end="511" vertical-scroll-proportion="0.33235294" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/reflect/Method.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="28" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.33150685">
-          <folding />
-        </state>
+        <state line="63" column="28" selection-start="2890" selection-end="2890" vertical-scroll-proportion="0.33150685" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="28" selection-start="407" selection-end="407" vertical-scroll-proportion="0.3488372">
-          <folding />
-        </state>
+        <state line="10" column="28" selection-start="407" selection-end="407" vertical-scroll-proportion="0.3488372" />
       </provider>
     </entry>
     <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.42635658">
+        <state line="12" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.42635658" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/InputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/java/lang/reflect/Proxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="1703" selection-end="1703" vertical-scroll-proportion="0.53367877">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java">
+    <entry file="file://$PROJECT_DIR$/../mzhaoTWer-Biblioteca-ming-4434fb7/test/com/twu28/biblioteca/BibliotecaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="15" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+        <state line="22" column="41" selection-start="636" selection-end="646" vertical-scroll-proportion="0.41095892">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Biblioteca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="51" selection-start="2897" selection-end="2897" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#318#324#0" expanded="true" />
-          </folding>
+        <state line="18" column="0" selection-start="191" selection-end="365" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/BibliotecaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="60" selection-start="1622" selection-end="1622" vertical-scroll-proportion="0.5394737">
+        <state line="31" column="26" selection-start="811" selection-end="811" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/MenuOptionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="37" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/MenuOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="12" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="62" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thoughtworks/biblioteca/BookList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="852" selection-end="852" vertical-scroll-proportion="0.6164383">
+          <folding>
+            <element signature="e#301#307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>biblioteca</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>bsh-core-2.0b4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

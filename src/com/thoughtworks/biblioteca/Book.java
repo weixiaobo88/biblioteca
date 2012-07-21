@@ -1,8 +1,5 @@
 package com.thoughtworks.biblioteca;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * User: twer
@@ -12,18 +9,19 @@ import java.util.Map;
  */
 public class Book {
 
-    int bookId;
-    String bookName;
-    boolean bookAvailableReserve = true;
+    private int bookId;
+    private String bookName;
+    private boolean bookAvailableReserve = true;
+
 
     public Book(int bookId, String bookName) {
         this.bookId = bookId;
         this.bookName = bookName;
     }
 
-    public boolean getBookAvailableReserve(){
-        return bookAvailableReserve;
+
+    public String bookInfo() {
+        String bookInfo = this.bookId + "->" + this.bookName;
+        return bookInfo;  //To change body of created methods use File | Settings | File Templates.
     }
-
-
 }
