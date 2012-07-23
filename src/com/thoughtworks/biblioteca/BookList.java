@@ -24,6 +24,9 @@ public class BookList {
         bookArrayList.add(book4);
     }
 
+    public int bookListSize(){
+        return bookArrayList.size();
+    }
 
     public void printBookList() {
         for(int bookIndex = 0; bookIndex < bookArrayList.size(); bookIndex++){
@@ -31,5 +34,13 @@ public class BookList {
         }
     }
 
+    public boolean reserve(Integer reserveBookId) {
+        boolean isReserveSuccessful = false;
+        if(bookArrayList.get(reserveBookId).isBookAvailableReserve()){
+            bookArrayList.get(reserveBookId).setBookState(false);
+            isReserveSuccessful = true;
+        }
+        return isReserveSuccessful;
+    }
 }
 

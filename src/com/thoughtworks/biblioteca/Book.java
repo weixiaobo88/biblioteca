@@ -21,7 +21,15 @@ public class Book {
 
 
     public String bookInfo() {
-        String bookInfo = this.bookId + "->" + this.bookName;
+        String bookInfo = this.bookId + ":" + this.bookName;
         return bookInfo;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    public boolean isBookAvailableReserve(){
+        return bookAvailableReserve;
+    }
+
+    public void setBookState(boolean bookState){
+        this.bookAvailableReserve = bookState;
     }
 }
