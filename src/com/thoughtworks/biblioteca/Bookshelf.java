@@ -9,19 +9,11 @@ import java.util.ArrayList;
  * Time: 11:33 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BookList {
+public class Bookshelf {
     private ArrayList<Book> bookArrayList = new ArrayList<Book>();
 
-    public BookList(){
-        Book book1 = new Book(1, "Clean Code");
-        Book book2 = new Book(2, "Refactor");
-        Book book3 = new Book(3, "Tdd");
-        Book book4 = new Book(4, "Java");
-
-        bookArrayList.add(book1);
-        bookArrayList.add(book2);
-        bookArrayList.add(book3);
-        bookArrayList.add(book4);
+    public void addBook(Book book){
+        bookArrayList.add(book);
     }
 
     public int bookListSize(){
@@ -36,8 +28,9 @@ public class BookList {
 
     public boolean reserve(Integer reserveBookId) {
         boolean isReserveSuccessful = false;
-        if(bookArrayList.get(reserveBookId).isBookAvailableReserve()){
-            bookArrayList.get(reserveBookId).setBookState(false);
+        Book book = bookArrayList.get(reserveBookId);
+        if(book.isBookAvailableReserve()){
+            book.setBookState(false);
             isReserveSuccessful = true;
         }
         return isReserveSuccessful;

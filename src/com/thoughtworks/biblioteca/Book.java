@@ -32,4 +32,8 @@ public class Book {
     public void setBookState(boolean bookState){
         this.bookAvailableReserve = bookState;
     }
+
+    public Boolean reserve(int bookId) {
+        return null;  //To change body of created methods use File | Settings | File Templates.
+    }
 }

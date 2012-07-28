@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class MenuOption {
     private ArrayList<String> menuOptionList = new ArrayList<String>();
-    private BookList bookList = new BookList();
+    private Bookshelf bookshelf = new Bookshelf();
     private InputStream inputStream = new InputStream();
 
     public MenuOption(){
@@ -57,7 +57,7 @@ public class MenuOption {
     
     public void viewBook() {
         System.out.println("--All books are:---------------------------");
-        bookList.printBookList();
+        bookshelf.printBookList();
         printViewExtraDirective();
         afterView();
     }
@@ -94,7 +94,7 @@ public class MenuOption {
 
     public void reserveBook() {
         boolean flag = true;
-        bookList.printBookList();
+        bookshelf.printBookList();
         printReserveExtraDirective();
         
         String reserveBookId = inputStream.inputString();
@@ -112,7 +112,7 @@ public class MenuOption {
             else if(!ifSelectedOptionIsValid(Integer.valueOf(reserveBookId))){
                 System.out.println("Please input the correct id .");
             }
-            else if(bookList.reserve(Integer.valueOf(reserveBookId)))
+            else if(bookshelf.reserve(Integer.valueOf(reserveBookId)))
                 System.out.println("Thank You! Enjoy the book.");
             else {
                 System.out.println("Sorry we don't have that book yet.");
@@ -128,7 +128,7 @@ public class MenuOption {
     {
         boolean inputIsValid = false;
 
-        for(int bookNum = 1; bookNum <= bookList.bookListSize(); bookNum++){
+        for(int bookNum = 1; bookNum <= bookshelf.bookListSize(); bookNum++){
             if (inputBookId == bookNum){
                 inputIsValid = true;
             }

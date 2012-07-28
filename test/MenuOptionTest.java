@@ -10,6 +10,8 @@ import java.io.PrintStream;
 
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * Created with IntelliJ IDEA.
@@ -31,7 +33,6 @@ public class MenuOptionTest {
     private InputStream mockInputStream = context.mock(InputStream.class);
 
 
-
     @Test
     public void should_show_menu_option_when_start_up(){
 
@@ -45,28 +46,23 @@ public class MenuOptionTest {
     }
 
     @Test
+    public void test(){
+        PrintStream mockPrintStream = mock(PrintStream.class);
+        when(mockPrintStream.checkError()).thenReturn(false);
+    }
+
+    @Test
     public void should_return_true_when_input_option_is_valid(){
         assertThat(menuOption.ifSelectedOptionIsValid(3), is(true));
     }
+
+
 
     @Test
     public void should_return_false_when_input_option_is_invalid(){
         assertThat(menuOption.ifSelectedOptionIsValid(5), is(false));
     }
 
-
-//    @Test
-//    public void should_show_book_list_when_select_the_menu_of_view_books(){
-//        String optionOfViewBook = "a";
-//        assertThat(menuOption.optionProcess(optionOfViewBook),is("viewBook"));
-//    }
-//
-//
-//    @Test
-//    public void should_exit_when_select_the_menu_of_exit(){
-//        String optionOfExit = "exit";
-//        assertThat(menuOption.optionProcess(optionOfExit),is("exit"));
-//    }
 
     @Test
     public void should_show_sorry_when_selected_book_is_unavailable(){
@@ -78,6 +74,16 @@ public class MenuOptionTest {
         }});
 
         menuOption.reserveBook();
+    }
+
+
+    @Test
+    public void should_return_false_when_input_is_not_a_number(){
+        assertThat("input is a number!", menuOption.isNum("z"), is(false));
+    }
+    @Test
+    public void should_return_true_when_input_is_a_number(){
+        assertThat("input is not a number!", menuOption.isNum("9"), is(true));
     }
 
 }
