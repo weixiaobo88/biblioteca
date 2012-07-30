@@ -22,18 +22,12 @@ public class Bookshelf {
 
     public void printBookList() {
         for(int bookIndex = 0; bookIndex < bookArrayList.size(); bookIndex++){
-            System.out.println(bookArrayList.get(bookIndex).bookInfo());
+            System.out.print(bookArrayList.get(bookIndex).bookInfo());
         }
     }
 
     public boolean reserve(Integer reserveBookId) {
-        boolean isReserveSuccessful = false;
-        Book book = bookArrayList.get(reserveBookId);
-        if(book.isBookAvailableReserve()){
-            book.setBookState(false);
-            isReserveSuccessful = true;
-        }
-        return isReserveSuccessful;
+        return bookArrayList.get(reserveBookId).reserve();
     }
 }
 

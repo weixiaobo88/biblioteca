@@ -1,4 +1,5 @@
-import com.thoughtworks.biblioteca.MenuOption;
+package com.thoughtworks.biblioteca;
+
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -23,6 +24,15 @@ import static org.mockito.Mockito.when;
 public class MenuOptionTest {
 
     private MenuOption menuOption = new MenuOption();
+
+
+    @Test
+    public void should_return_menu_option_when_given_the_menu_id(){
+        assertThat("The menu is not correct", menuOption.optionIs(0), is("a, View book list."));
+    }
+
+
+
 
     private Mockery context = new JUnit4Mockery(){
         {
@@ -64,17 +74,17 @@ public class MenuOptionTest {
     }
 
 
-    @Test
-    public void should_show_sorry_when_selected_book_is_unavailable(){
-
-        System.setOut(mockPrintStream);
-        System.setIn(mockInputStream);
-        context.checking(new Expectations(){{
-            oneOf(mockPrintStream).println("Sorry we don't have that book yet.");
-        }});
-
-        menuOption.reserveBook();
-    }
+//    @Test
+//    public void should_show_sorry_when_selected_book_is_unavailable(){
+//
+//        System.setOut(mockPrintStream);
+//        System.setIn(mockInputStream);
+//        context.checking(new Expectations(){{
+//            oneOf(mockPrintStream).println("Sorry we don't have that book yet.");
+//        }});
+//
+//        menuOption.reserveBook();
+//    }
 
 
     @Test

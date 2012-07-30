@@ -1,5 +1,5 @@
-import com.thoughtworks.biblioteca.Book;
-import com.thoughtworks.biblioteca.Bookshelf;
+package com.thoughtworks.biblioteca;
+
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.integration.junit4.JUnit4Mockery;
@@ -28,21 +28,24 @@ public class BookShelfTest {
     };
     private PrintStream mockPrintStream = context.mock(PrintStream.class);
 
-
-    @Test
-    public void should_return_the_size_of_the_bookshelf(){
+    private void addBook() {
         bookshelf.addBook(new Book(1, "Test Driven Development"));
-        bookshelf.addBook(new Book(2, "Refactor"));
-
-        assertThat("The number of books is not correct", bookshelf.bookListSize(), is(2));
     }
 
     @Test
+    public void should_return_the_size_of_the_bookshelf(){
+        addBook();
+        assertThat("The number of books is not correct", bookshelf.bookListSize(), is(1));
+    }
+
+
+
+    @Test
     public void should_print_books_when_given_the_bookshelf(){
-        bookshelf.addBook(new Book(1, "Test Driven Development"));
+        addBook();
         System.setOut(mockPrintStream);
         context.checking(new Expectations(){{
-            oneOf(mockPrintStream).println("1:Test Driven Development");
+            oneOf(mockPrintStream).print("1:Test Driven Development");
         }});
 
         bookshelf.printBookList();

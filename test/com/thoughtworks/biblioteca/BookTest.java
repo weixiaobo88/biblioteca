@@ -1,4 +1,5 @@
-import com.thoughtworks.biblioteca.Book;
+package com.thoughtworks.biblioteca;
+
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -22,7 +23,7 @@ public class BookTest {
 
     @Test
     public void should_return_true_when_given_book_id_which_is_available_for_reserve(){
-        assertThat("The book is unavailable",  book.reserve(1), is(true));
+        assertThat("The book is unavailable",  book.reserve(), is(true));
     }
 
 

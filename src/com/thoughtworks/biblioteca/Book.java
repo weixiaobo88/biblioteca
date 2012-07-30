@@ -25,15 +25,13 @@ public class Book {
         return bookInfo;  //To change body of created methods use File | Settings | File Templates.
     }
 
-    public boolean isBookAvailableReserve(){
-        return bookAvailableReserve;
-    }
 
-    public void setBookState(boolean bookState){
-        this.bookAvailableReserve = bookState;
-    }
-
-    public Boolean reserve(int bookId) {
-        return null;  //To change body of created methods use File | Settings | File Templates.
+    public Boolean reserve() {
+        if(this.bookAvailableReserve){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 }
