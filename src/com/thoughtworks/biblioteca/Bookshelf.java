@@ -2,13 +2,6 @@ package com.thoughtworks.biblioteca;
 
 import java.util.ArrayList;
 
-/**
- * Created with IntelliJ IDEA.
- * User: twer
- * Date: 7/20/12
- * Time: 11:33 PM
- * To change this template use File | Settings | File Templates.
- */
 public class Bookshelf {
     private ArrayList<Book> bookArrayList = new ArrayList<Book>();
 
@@ -20,10 +13,13 @@ public class Bookshelf {
         return bookArrayList.size();
     }
 
-    public void printBookList() {
+    public String bookListString() {
+        String bookListString = "";
         for(int bookIndex = 0; bookIndex < bookArrayList.size(); bookIndex++){
             System.out.print(bookArrayList.get(bookIndex).bookInfo());
+            bookListString += bookArrayList.get(bookIndex).bookInfo();
         }
+        return bookListString;
     }
 
     public boolean reserve(Integer reserveBookId) {

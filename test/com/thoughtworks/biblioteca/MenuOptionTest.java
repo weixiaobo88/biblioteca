@@ -83,7 +83,7 @@ public class MenuOptionTest {
 //            oneOf(mockPrintStream).println("Sorry we don't have that book yet.");
 //        }});
 //
-//        menuOption.reserveBook();
+//        menuOption.execute();
 //    }
 
 

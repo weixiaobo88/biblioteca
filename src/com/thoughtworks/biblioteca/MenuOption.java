@@ -1,6 +1,8 @@
 package com.thoughtworks.biblioteca;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,25 +15,29 @@ public class MenuOption {
     public static final String EXIT_COMMAND = "exit";
     public static final String BACK_COMMAND = "back";
     private ArrayList<String> menuOptionList = new ArrayList<String>();
-    private Bookshelf bookshelf = new Bookshelf();
+
+    private Map<String , Command> map = new HashMap<String, Command>();
+
+    private Bookshelf bookshelf;
     private InputStream inputStream = new InputStream();
-    ViewBook viewBook = new ViewBook();
-    private final ReserveBook reserveBook = new ReserveBook();
-    private final CheckLibraryNumber checkLibraryNumber = new CheckLibraryNumber();
 
     public MenuOption(){
+        bookshelf = BookFactory.createBookshelf();
+
         menuOptionList.add("a, View book list.");
         menuOptionList.add("b, Reserve a book.");
         menuOptionList.add("c, Check the library number.");
         menuOptionList.add("d, Exit.");
+
+        map.put("a", new ViewBook(bookshelf));
+        map.put("b", new ReserveBook());
+        map.put("c", new CheckLibraryNumber());
     }
 
     public void print() {
-
-        for(int menuIndex = 0; menuIndex < menuOptionList.size(); menuIndex++) {
-            System.out.println(menuOptionList.get(menuIndex));
+        for (String menu : menuOptionList) {
+            System.out.println(menu);
         }
-
     }
 
 
@@ -40,25 +46,30 @@ public class MenuOption {
     }
     
 
-    public void optionProcess(String option) {
-        
-        if(option.equalsIgnoreCase("a")){
-            viewBook.viewBook();
+    public String optionProcess(String option) {
+//
+//        if(option.equalsIgnoreCase("a")){
+//            viewBook.execute();
+//        }
+//        else if(option.equalsIgnoreCase("b")){
+//            reserveBook.execute();
+//            }
+//        else if(option.equalsIgnoreCase("c")){
+//            checkLibraryNumber.execute();
+//        }
+//        else if(option.equalsIgnoreCase("d")){
+//        	System.out.println("ByeBye~!");
+//            System.exit(1);
+//        }
+//        else {
+//            System.out.println("Please input correct order!");
+//        }
+
+        String output = "";
+        if (map .containsKey(option)){
+            output = map.get(option).execute();
         }
-        else if(option.equalsIgnoreCase("b")){
-            reserveBook.reserveBook();
-            }
-        else if(option.equalsIgnoreCase("c")){
-            checkLibraryNumber.checkLibraryNumber();
-        }
-        else if(option.equalsIgnoreCase("d")){ 
-        	System.out.println("ByeBye~!");
-            System.exit(1);
-        }
-        else {
-            System.out.println("Please input correct order!");
-        }
-        
+        return output;
     }
 
     public boolean ifSelectedOptionIsValid(int inputBookId)

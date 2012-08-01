@@ -1,14 +1,14 @@
 package com.thoughtworks.biblioteca;
 
-public class ReserveBook {
+public class ReserveBook implements Command{
     private MenuOption menuOption;
     private InputStream inputStream = new InputStream();
     Bookshelf bookshelf = new Bookshelf();
 
 
-    public void reserveBook() {
+    public String execute() {
         boolean flag = true;
-        bookshelf.printBookList();
+        bookshelf.bookListString();
         printReserveExtraDirective();
 
         String reserveBookId = inputStream.inputString();
@@ -32,6 +32,7 @@ public class ReserveBook {
             printReserveExtraDirective();
             reserveBookId = inputStream.inputString();
         }
+        return "";
     }
 
 

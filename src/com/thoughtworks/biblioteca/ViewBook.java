@@ -1,6 +1,6 @@
 package com.thoughtworks.biblioteca;
 
-public class ViewBook {
+public class ViewBook implements Command {
     private Bookshelf bookshelf = new Bookshelf();
     private ReserveBook reserveBook = new ReserveBook();
     private InputStream inputStream = new InputStream();
@@ -8,12 +8,22 @@ public class ViewBook {
     public static final String EXIT_COMMAND = "exit";
     public static final String BACK_COMMAND = "back";
 
+    public ViewBook() {
+    }
 
-    public void viewBook() {
-        System.out.println("--All books are:---------------------------");
-        bookshelf.printBookList();
-        printViewExtraDirective();
-        afterView();
+    public ViewBook(Bookshelf bookshelf) {
+        this.bookshelf = bookshelf;
+    }
+
+    @Override
+    public String execute() {
+//        System.out.println("--All books are:---------------------------");
+
+//        printViewExtraDirective();
+//        afterView();
+
+//        System.out.println(bookshelf.bookListString());
+        return bookshelf.bookListString();
     }
 
 
@@ -35,7 +45,7 @@ public class ViewBook {
         {
             if(viewDirective.equalsIgnoreCase(RESERVE_COMMAND)){
                 flag = false;
-                reserveBook.reserveBook();
+                reserveBook.execute();
             }
             else if(viewDirective.equalsIgnoreCase(BACK_COMMAND))
                 break;

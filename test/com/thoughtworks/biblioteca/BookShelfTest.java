@@ -48,7 +48,7 @@ public class BookShelfTest {
             oneOf(mockPrintStream).print("1:Test Driven Development");
         }});
 
-        bookshelf.printBookList();
+        bookshelf.bookListString();
     }
 
 
